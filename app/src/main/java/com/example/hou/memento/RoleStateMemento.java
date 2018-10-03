@@ -8,6 +8,9 @@ package com.example.hou.memento;
 public class RoleStateMemento {
 
 
+    //作为一个存储保存细节的类  可灵活控制保存的变量  不会影响到客户端
+
+
     private int vit;
     private int atk;
     private int def;

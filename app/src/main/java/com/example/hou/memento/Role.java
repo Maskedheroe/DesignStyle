@@ -37,7 +37,7 @@ public class Role {
     }
 
 
-    public RoleStateMemento saveState(){
+    public RoleStateMemento saveState(){  //返回一个备忘录 存储着自己的信息
         return new RoleStateMemento(vit,atk,def);
     }
 

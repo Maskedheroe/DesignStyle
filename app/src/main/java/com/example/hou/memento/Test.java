@@ -15,7 +15,7 @@ public class Test {
         role1.fight();
         role1.show();
 
-        //恢复之前
+        //恢复操作
         role1.RecoveryState(stateAnim.getMemento());
         role1.show();
 
