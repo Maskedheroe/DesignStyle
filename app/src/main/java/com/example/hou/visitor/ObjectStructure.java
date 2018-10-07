@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ObjectStructure {
+
     private List<Person> elements = new ArrayList<>(20);
 
     public void Attach(Person element){  //增加
@@ -19,4 +20,5 @@ public class ObjectStructure {
             element.accept(Visitor);
         }
     }
+
 }

@@ -5,4 +5,5 @@ public class Woman extends Person {
     public void accept(Acation visitor) {
         visitor.getwomanConclusion(this);  //双分派技术
     }
+
 }
