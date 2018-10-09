@@ -2,7 +2,6 @@ package com.example.hou.prototype;
 
 
 /*
-*
 * 原型模式要注意深copy
 * 引用类型的对象只会复制引用 所以无论拷贝多少份对象 最后只会指向最后一份的对象
 * */
