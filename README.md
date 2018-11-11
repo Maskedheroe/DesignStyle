@@ -10,3 +10,4 @@
              该模式适用于数据结构（就是model）稳定的系统 ,且算法极易变化的系统  
 <4> 原型模式     prototype               
 <5> 模板方法模式 TemplateMethod  
+<6> 迭代器模式 Iterator  
