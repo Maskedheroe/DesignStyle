@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConcreteAggregate extends Aggregate {
+    //具体聚集类 继承Aggregate
 
     private List<Object> items = new ArrayList<>();
 
-    public List<Object> getItems() {
+    public List<Object> getItems() {  //索引器的getter setter
         return items;
     }
 
