@@ -1,0 +1,11 @@
+class SingletonKotlin private constructor(){
+
+    public var value:SingletonKotlin ?= null
+    private object mHolder { val INSTANCE = SingletonKotlin()}
+    companion object {
+        fun getInstance():SingletonKotlin{
+            return mHolder.INSTANCE
+        }
+    }
+
+}
