@@ -90,5 +90,34 @@ public class SingletonJava {
     }
     
     
-    
+import java.util.HashMap;
+import java.util.Map;
+
+public class SingletonManager {
+
+    /**
+     * 使用容器进行单例模式
+     * 将多种单例模式注入到一个统一的管理类中，在使用时根据key获取对象
+     * 
+     */
+   
+
+    private static final Map<String,Object> objmap = new HashMap<String, Object>();
+
+    private SingletonManager(){
+    }
+
+    public static void registerService(String key,Object instance){
+        if (!objmap.containsKey(key)){
+            objmap.put(key, instance);
+        }
+    }
+
+
+    public static Object getService(String key){
+        return objmap.get(key);
+    }
+
+}
+
 }
