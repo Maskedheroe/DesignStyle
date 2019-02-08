@@ -144,6 +144,12 @@ class Test {
      *
      *
      * */
+
+    /**
+     *
+     * 在Kotlin中 Java的静态内部类可直接写为 内部类  在companion object中写 不能使用！！
+     * * */
+
     fun test() {
         val config = ImageLoaderConfig.Builder()
                 .setLoadingPlaceholder(R.drawable.ic_launcher_background)
