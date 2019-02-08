@@ -1,4 +1,4 @@
-package com.example.hou.bulider;
+package com.example.hou.builder;
 
 public class Test {
     public static void show(){

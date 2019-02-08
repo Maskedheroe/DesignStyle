@@ -1,4 +1,4 @@
-package com.example.hou.bulider;
+package com.example.hou.builder;
 
 public class ConcreteBuilder1 extends Bulider {
 
