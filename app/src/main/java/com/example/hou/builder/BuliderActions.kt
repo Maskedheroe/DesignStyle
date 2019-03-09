@@ -1,3 +1,4 @@
+/*
 package com.example.hou.builder
 
 import android.graphics.Bitmap
@@ -68,19 +69,25 @@ class ImageLoaderConfig {
 
 
     class Builder {
-        /*
+        */
+/*
         * 图片缓存对象
-        * */
+        * *//*
+
         val bitmapCache = MemoryCache()
 
-        /**
+        */
+/**
          * 加载图片时的loading和加载失败时的图片配置对象
-         * */
+         * *//*
+
         val disPlayConfig = DisPlayCongfig()
 
-        /**
+        */
+/**
          * 加载策略
-         * */
+         * *//*
+
         var loadPolicy = SerialPolicy()
 
         //线程数量
@@ -136,19 +143,23 @@ class ImageLoaderConfig {
 }
 
 class Test {
-    /**
+    */
+/**
      *
      * 这就是Android中大多数Builder的使用场景
      * 没有出现 Director
      * XXX.Builder同时扮演了builder、ConcreteBuilder、Director角色 简化其设计
      *
      *
-     * */
+     * *//*
 
-    /**
+
+    */
+/**
      *
-     * 在Kotlin中 Java的静态内部类可直接写为 内部类  在companion object中写 不能使用！！
-     * * */
+     * 在Kotlin中 Java的静态内部类可直接写为 内部类  在companion object中写 不能使用！！Y
+     * * *//*
+
 
     fun test() {
         val config = ImageLoaderConfig.Builder()
@@ -162,4 +173,4 @@ class Test {
         //将配置初始化到imageLoader中
         ImageLoader.getInstance().init(config)
     }
-}
+}*/
