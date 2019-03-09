@@ -39,3 +39,14 @@ public class VoltAdapter(adapter: Volt220) : FiveVolt {
             mVolt220.getVolt220()
 
 }
+
+
+public class TestDemo1 {
+
+    val adapter : VoltAdapter = VoltAdapter(Volt220())
+
+    fun show(){
+        adapter.getVolt5()
+        println("拿到了5伏！")
+    }
+}
