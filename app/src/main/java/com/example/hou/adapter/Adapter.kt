@@ -24,7 +24,7 @@ class Adapter : Target(){
 
 }
 
-class Test {
+class TestDemo {
 
     val target = Adapter()
 
