@@ -1,0 +1,56 @@
+public class NutritionFacts {
+    private final int servingSize;
+    private final int servings;
+    private final int calories;
+    private final int fat;
+    private final int sodium;
+    private final int carbohydrate;
+
+    //NutritionFacts是不可变的  所有默认参数值都放在一个地方
+    public NutritionFacts(Bulider bulider) {
+        servingSize = bulider.servingSize;
+        servings = bulider.servings;
+        calories = bulider.calories;
+        fat = bulider.fat;
+        sodium = bulider.sodium;
+        carbohydrate = bulider.carbohydrate;
+    }
+
+    public static class Bulider {
+        private final int servingSize;
+        private final int servings;
+        private int calories = 0;
+        private int fat = 0;
+        private int sodium = 0;
+        private int carbohydrate = 0;
+
+        public Bulider(int servingSize, int servings) {
+            this.servingSize = servingSize;
+            this.servings = servings;
+        }
+
+        public Bulider calories(int val) {
+            calories = val;
+            return this;
+        }
+
+        public Bulider fat(int val) {
+            fat = val;
+            return this;
+        }
+
+        public Bulider sodium(int val) {
+            sodium = val;
+            return this;
+        }
+
+        public Bulider carbohydrate(int val) {
+            carbohydrate = val;
+            return this;
+        }
+
+        public NutritionFacts build() {
+            return new NutritionFacts(this);
+        }
+    }
+}
